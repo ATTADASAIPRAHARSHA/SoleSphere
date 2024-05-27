@@ -36,12 +36,12 @@ const Header = () => {
 
         <div className="navlist gender">
           <ul>
-            <li><NavLink className='Link' to="/mens-footwear" activeClassName="active">Men</NavLink></li>
-            <li><NavLink className='Link' to="/womens-footwear" activeClassName="active">Women</NavLink></li>
-            <li><NavLink className='Link' to="/kids-footwear" activeClassName="active">Kids</NavLink></li>
-            <li><NavLink className='Link' to="/sports-footwear" activeClassName="active">Sports</NavLink></li>
-            <li><NavLink className='Link' to="/specialty-footwear" activeClassName="active">Specialty</NavLink></li>
-            <li><NavLink className='Link' to="/seasonal-footwear" activeClassName="active">Seasonal</NavLink></li>
+            <li><NavLink className='Link' to="/SoleSphere/mens-footwear" activeClassName="active">Men</NavLink></li>
+            <li><NavLink className='Link' to="/SoleSphere/womens-footwear" activeClassName="active">Women</NavLink></li>
+            <li><NavLink className='Link' to="/SoleSphere/kids-footwear" activeClassName="active">Kids</NavLink></li>
+            <li><NavLink className='Link' to="/SoleSphere/sports-footwear" activeClassName="active">Sports</NavLink></li>
+            <li><NavLink className='Link' to="/SoleSphere/specialty-footwear" activeClassName="active">Specialty</NavLink></li>
+            <li><NavLink className='Link' to="/SoleSphere/seasonal-footwear" activeClassName="active">Seasonal</NavLink></li>
           </ul>
         </div>
         <div className="navlist">
