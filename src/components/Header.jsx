@@ -46,7 +46,7 @@ const Header = () => {
         </div>
         <div className="navlist">
           <ul>
-            <li><NavLink className='Link' activeClassName="active" to="/"><img src="home.png" width={30} height={30} alt="" /> </NavLink></li>
+            <li><NavLink className='Link' activeClassName="active" to="/SoleSphere"><img src="home.png" width={30} height={30} alt="" /> </NavLink></li>
             <li><NavLink className='Link' activeClassName="active" to="/cart"><img src="cart.png" width={30} height={30} alt="" /> </NavLink></li>
             <li><NavLink className='Link' activeClassName="active" to="#"><img src="heart.png" width={30} height={30} alt="" /> </NavLink></li>
           </ul>
