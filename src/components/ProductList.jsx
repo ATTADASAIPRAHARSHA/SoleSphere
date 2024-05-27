@@ -1,5 +1,5 @@
 import React , {useState,useEffect} from 'react'
-import Data from '../Data.json'
+import Data from './Data.json'
 import './ProductList.css'
 import { Link } from 'react-router-dom';
 
