@@ -65,7 +65,7 @@ const Product = () => {
         {array.map((item,index)=>(
             <div className='pro' key={index}>
                 <div className="productcontet">
-                    <img className='prodimg'  src={item.category==="Seasonal"?item.productName+".webp": item.productName+".png"} width={600} height={300} alt="" />
+                    <img className='prodimg'  src={item.category==="Seasonal"?"/SoleSphere/"+item.productName+".webp": item.productName+".png"} width={600} height={300} alt="" />
                     <div className="detail">
                         <div className='productname'><h1>{item.productName}</h1><h3>{`For ${item.category} (${item.brand})`}</h3></div>
 

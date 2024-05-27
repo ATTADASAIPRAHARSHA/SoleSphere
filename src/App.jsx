@@ -15,13 +15,13 @@ function App() {
     <>
     <Routes>
          <Route path="/SoleSphere" element={<Home />} />
-        <Route path="/mens-footwear" element={<ProductList category="Men" />} />
-        <Route path="/womens-footwear" element={<ProductList category="Women" />} />
-        <Route path="/kids-footwear" element={<ProductList category="Kids" />} />
-        <Route path="/sports-footwear" element={<ProductList category="Sports" />} />
-        <Route path="/specialty-footwear" element={<ProductList category="Specialty" />} />
-        <Route path="/seasonal-footwear" element={<ProductList category="Seasonal" />} />
-        <Route path="/cart" element={<Cart />} />
+        <Route path="/SoleSphere/mens-footwear" element={<ProductList category="Men" />} />
+        <Route path="/SoleSphere/womens-footwear" element={<ProductList category="Women" />} />
+        <Route path="/SoleSphere/kids-footwear" element={<ProductList category="Kids" />} />
+        <Route path="/SoleSphere/sports-footwear" element={<ProductList category="Sports" />} />
+        <Route path="/SoleSphere/specialty-footwear" element={<ProductList category="Specialty" />} />
+        <Route path="/SoleSphere/seasonal-footwear" element={<ProductList category="Seasonal" />} />
+        <Route path="/SoleSphere/cart" element={<Cart />} />
         <Route path={`/:id`} element={<Product/>} />
       </Routes>
       
