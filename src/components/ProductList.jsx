@@ -56,7 +56,7 @@ const ProductList = ({category}) => {
         {Cart.map((item,index)=>(
 
           <Link to={`/${item.id}`} key={index} className='card'>
-            <img className='shoeimg' src={`/SoleSphere/${item.category === "Seasonal" ? item.productName + ".webp" : item.productName + ".png"}`} width={220} height={120} alt="" />
+            <img className='shoeimg' src={`${item.category === "Seasonal" ? "/SoleSphere/"+item.productName + ".webp" : item.productName + ".png"}`} width={220} height={120} alt="" />
             <div>{item.productName}</div>
             { `MRP : $${item.price} `}
             <img src={item.rating+'.png'} width={80} alt="" />
