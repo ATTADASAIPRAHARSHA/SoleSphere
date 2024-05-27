@@ -2,7 +2,7 @@
   "name": "e-commerce-web",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://attadasaipraharsha.github.io/",
+  "homepage": "https://attadasaipraharsha.github.io/SoleSphere/",
   "type": "module",
   "scripts": {
     "dev": "vite",
