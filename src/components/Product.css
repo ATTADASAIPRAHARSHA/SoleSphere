@@ -1,0 +1,147 @@
+.pro{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    position: relative;
+}
+.productcontet{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    gap: 85px;
+    margin-bottom:25px ;
+}
+.description{
+    /* text-align: center; */
+    font-size: 17px;
+    font-weight: 550;
+}
+
+.greatnext{
+    position: absolute;
+    top: 10%;
+    right: 0;
+    padding: 5px;
+    /* font-size: 10px; */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.lessprev{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    padding: 5px;
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h4,h1,h3,h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 25px;
+}
+h3{
+    font-size: 20px;
+}
+.productsize{
+    display: flex;
+    gap: 20px;
+}
+.productcolor{
+    display: flex;
+    gap: 20px;
+}
+.colorcard{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 15px;
+}
+.sizecard{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(201, 198, 198);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.ordernow{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.ordernow button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    background: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1050px) {
+    .productcontet{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+@media (max-width:900px) {
+    .prodimg{
+        width: 500px;
+        height: 200px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 15px;
+    }
+    .productrating img{
+        width: 70px;
+    }
+    
+}
+@media (max-width:650px) {
+    .prodimg{
+        width: 400px;
+        height: 150px;
+    }
+    h1{
+        font-size: 27px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 13px;
+    }
+    
+}
+@media (max-width:500px) {
+    .prodimg{
+        width: 300px;
+        height: 100px;
+    }
+    
+}

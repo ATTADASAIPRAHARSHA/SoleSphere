@@ -1,0 +1,115 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+    padding: 0px 15px;
+    margin-bottom: 10px;
+    align-items: center;
+    font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  background-color: rgb(49, 49, 253);
+  position: sticky;
+  top: 5px;
+  z-index: 9;
+}
+.active-link {
+    color: red; /* Style for the active link */
+    font-weight: bold;
+}
+.logo img{
+    border-radius: 5px;
+}
+
+.navlist ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 25px ;
+    
+}
+.Link{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.active {
+    color: red; /* Color for active link */
+    font-weight: bold;
+}
+.navlist li{
+    display: flex;
+    position: relative;
+   
+}
+.navlist li::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    bottom: 0;
+    transform: scale(0);
+    transition: all 0.5s;
+}
+.navlist li:hover::before {
+    transform: scale(1);
+  }
+.borderradius
+{
+    border-radius: 35px;
+    opacity: 0.9;
+}
+.hamburger{
+    display: none;
+}
+.hamsec{
+    display: none;
+}
+.hamsec ul{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.black{
+    color: black;
+
+}
+
+@media (max-width:900px) {
+    .navlist ul{
+        font-size: 18px ;
+        
+    }
+    .Link img{
+        width: 23.5px;
+        height: 23.5px;
+    }
+    .logo img{
+        width: 50px;
+        height: 30px;
+    }
+    .navbar{
+        padding: 5px 10px;
+    }
+}
+@media (max-width:700px) {
+    .gender{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamsec{
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    
+    .navlist li{
+      font-size: 18px;
+    }
+  }
