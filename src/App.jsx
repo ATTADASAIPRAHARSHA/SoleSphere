@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <Routes>
-         <Route path="/" element={<Home />} />
+         <Route path="/SoleSphere" element={<Home />} />
         <Route path="/mens-footwear" element={<ProductList category="Men" />} />
         <Route path="/womens-footwear" element={<ProductList category="Women" />} />
         <Route path="/kids-footwear" element={<ProductList category="Kids" />} />
