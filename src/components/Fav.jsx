@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './ProductList.css'
+import './Fav.css'
 
 const Fav = () => {
   const [cartItems, setCartItems] = useState([]);
@@ -52,7 +53,7 @@ const Fav = () => {
       />
   
       <div className='porductlistheader'>YOUR Favourites</div>
-      <div className="cartcontainer">
+      <div className="favcontainer">
       <div className='container'>
         {cartItems && cartItems.length > 0 ?cartItems.map((item, index) => (
           
