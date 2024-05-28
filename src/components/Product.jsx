@@ -34,6 +34,21 @@ const Product = () => {
             theme: "light",
             });
     }
+    const handlefav = (item)=>{
+        let array1 = JSON.parse(localStorage.getItem('fav')) || [];
+        array1 = [...array1,item]
+        localStorage.setItem('fav',JSON.stringify(array1))
+        toast.success(' ADDED TO Favourites! 👍', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+    }
 
 
     console.log(array)
@@ -65,12 +80,12 @@ const Product = () => {
         {array.map((item,index)=>(
             <div className='pro' key={index}>
                 <div className="productcontet">
-                    <img className='prodimg'  src={item.category==="Seasonal"?"/SoleSphere/"+item.productName+".webp": item.productName+".png"} width={600} height={300} alt="" />
+                    <img className='prodimg'  src={item.category==="Seasonal"?"/SoleSphere/"+item.productName+".webp": "/SoleSphere/"+item.productName+".png"} width={600} height={300} alt="" />
                     <div className="detail">
                         <div className='productname'><h1>{item.productName}</h1><h3>{`For ${item.category} (${item.brand})`}</h3></div>
 
                             <div className="description">{item.description}</div>
-                        <div className='productrating'><img src={item.rating+'.png'} width={70} alt="" /></div>
+                        <div className='productrating'><img src={"/SoleSphere/"+item.rating+'.png'} width={70} alt="" /></div>
                         <div className='productprice'><h2>{`MRP: $${item.price}`}</h2><h3>incl. of taxes</h3><h4>(Also includes all applicable duties)</h4></div>
                         <div><h2>Available colurs :</h2>
                         <div className="productcolor">
@@ -93,14 +108,14 @@ const Product = () => {
                     </div>
                 </div>
                 <div className="ordernow">
-                    <button>ADD TO FAVOURITES <img src="lover.png" width={20} height={20} alt="" /></button>
-                    <button >Order Now <img src="order.png" width={20} height={20} alt="" /></button>
-                    <button onClick={()=>handlecart(item)}> ADD TO CART <img src="addtocart.png" width={20} height={20} alt="" /></button>
+                    <button onClick={()=>handlefav(item)}>ADD TO FAVOURITES <img src={"/SoleSphere/"+"lover.png"} width={20} height={20} alt="" /></button>
+                    <button >Order Now <img src={"/SoleSphere/"+"order.png"} width={20} height={20} alt="" /></button>
+                    <button onClick={()=>handlecart(item)}> ADD TO CART <img src={"/SoleSphere/"+"addtocart.png"} width={20} height={20} alt="" /></button>
                     
                 </div>
                 <ShoesReviews/>
-                <button onClick={()=>handlenext(item.id)} className='greatnext'><img src="nextshoe.png" width={40} height={40}  alt="" /></button>
-                <button onClick={()=>handleprev(item.id)} className='lessprev'><img src="previous.png" width={40} height={40}  alt="" /></button>
+                <button onClick={()=>handlenext(item.id)} className='greatnext'><img src={"/SoleSphere/"+"nextshoe.png"} width={40} height={40}  alt="" /></button>
+                <button onClick={()=>handleprev(item.id)} className='lessprev'><img src={"/SoleSphere/"+"previous.png"} width={40} height={40}  alt="" /></button>
             </div>
         ))}
 

@@ -8,7 +8,7 @@ const Home = () => {
     <div>
             <section>
                 <div className="above">STRIDE</div>
-                <div><img className='rotate' style={{ width: '70%', height: '100%' }} src="/Back3.png" alt="" /></div>
+                <div><img className='rotate' style={{ width: '70%', height: '100%' }} src="/SoleSphere/Back3.png" alt="" /></div>
                 <div className="below">ON</div>
             </section>
     </div>

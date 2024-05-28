@@ -7,6 +7,7 @@ import ProductList from './components/ProductList'
 import Home from './components/Home'
 import Product from './components/Product'
 import Cart from './components/Cart'
+import Fav from './components/Fav'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,7 @@ function App() {
         <Route path="/SoleSphere/specialty-footwear" element={<ProductList category="Specialty" />} />
         <Route path="/SoleSphere/seasonal-footwear" element={<ProductList category="Seasonal" />} />
         <Route path="/SoleSphere/cart" element={<Cart />} />
+        <Route path="/SoleSphere/fav" element={<Fav />} />
         <Route path={`/:id`} element={<Product/>} />
       </Routes>
       
