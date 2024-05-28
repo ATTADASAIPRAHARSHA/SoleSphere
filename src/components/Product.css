@@ -81,6 +81,7 @@ h3{
     display: flex;
     gap: 20px;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .ordernow button{
     display: flex;
@@ -105,8 +106,8 @@ h3{
 }
 @media (max-width:900px) {
     .prodimg{
-        width: 500px;
-        height: 200px;
+        max-width: 500px;
+        max-height: 200px;
     }
     h1{
         font-size: 30px;
@@ -124,8 +125,8 @@ h3{
 }
 @media (max-width:650px) {
     .prodimg{
-        width: 400px;
-        height: 150px;
+        max-width: 400px;
+        max-height: 150px;
     }
     h1{
         font-size: 27px;
@@ -140,8 +141,11 @@ h3{
 }
 @media (max-width:500px) {
     .prodimg{
-        width: 300px;
-        height: 100px;
+        max-width: 300px;
+        max-height: 100px;
+    }
+    .ordernow button{
+        font-size: 17px;
     }
     
 }
